@@ -10,6 +10,7 @@ import './images/logo.svg' ;
 import './images/map.png' ; 
 import './images/phone.svg' ; 
 import './images/vect.svg' ; 
+import './js/burger-menu.js' ; 
 import './js/openFormMessage..js' ; 
 import './js/sendDataForm.js' ; 
 import './style/address.styl' ; 
