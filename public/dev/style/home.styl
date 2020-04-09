@@ -1,0 +1,56 @@
+.home
+  &__heading
+    font-family: 'Merriweather', serif;
+    font-size 51px
+    line-height 74px
+    color #1F3F68
+    max-width 510px
+    @media(max-width 620px)
+      font-size 36px
+      line-height 45px
+      max-width 400px
+      margin 0 auto
+    @media(max-width 420px)
+      font-size 28px
+      line-height 36px
+  &__description
+    color #1F3F68
+    font-size 16px
+    line-height 26px
+    max-width 425px
+    opacity 0.6
+    margin-top 32px
+    margin-bottom 86px
+    @media(max-width 620px)
+      max-width 400px
+      margin 0 auto
+      margin-top 25px
+      margin-bottom 50px
+  &__button
+    padding 15px 48px
+    cursor pointer
+    color #fff
+    line-height 26px
+    letter-spacing 0.04em
+    box-sizing border-box
+    background #5A98D0
+    box-shadow 5px 10px 20px rgba(53, 110, 173, 0.2)
+    border-radius 10px
+    @media(max-width 620px)
+      margin 0 auto
+      display block
+  &-wrapper
+    padding-top 110px
+    box-sizing border-box
+    position relative
+    @media(max-width 620px)
+      padding-top 50px
+    &__illustration
+      position absolute
+      top 0
+      max-width 100%
+      z-index -1
+      right 0
+      max-height 100%
+      @media(max-width 1078px)
+        opacity .3

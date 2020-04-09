@@ -1,0 +1,24 @@
+extends ../layout/main
+
+block variable
+    - var title = 'homepage';
+    - var route = 'index';
+
+
+block wrapper
+    div(class='modal-form')
+        include ../includes/modules/form-send-message
+    div(class="header-wrapper_index")
+        include ../includes/modules/header
+        div(class='home-wrapper')
+            div(class='home container')
+                h1(class='home__heading') New Automation Tool for Your Home
+                p(class="home__description") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus tristique vulputate ultrices ut mauris tellus at. Posuere sollicitudin odio tellus elit.
+                button(class='home__button') See Our Project
+            img(src="./images/illustration.svg" alt='ill' class='home-wrapper__illustration')
+
+    main
+        include ../includes/modules/our-affairs
+        include ../includes/modules/beloved-client
+    div(class="footer__wrapper_index")
+        include ../includes/modules/footer

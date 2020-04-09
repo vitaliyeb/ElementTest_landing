@@ -1,0 +1,24 @@
+-
+    var clients = [
+        'LOGO CLIENT',
+        'LOGO CLIENT',
+        'LOGO CLIENT',
+        'LOGO CLIENT',
+        'LOGO CLIENT',
+        'LOGO CLIENT',
+        'LOGO CLIENT',
+        'More Client'
+    ];
+div(class='beloved-client__wrapper')
+    div(class='beloved-client container')
+        div(class='beloved-client__top')
+            h2(class="beloved-client__heading") Our Beloved Client
+            p(class='beloved-client__description') Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+        div(class='logo-client')
+            each client,index in clients
+                -var isLastItem = clients.length == index+1
+                div(class=`logo-client__item ${isLastItem ? 'logo-client__item_last' : null}`)
+                    if isLastItem
+                        a(class='logo-client__link' href="#") #{client}
+                    else
+                        p(class='logo-client__title') #{client} #{index+1}

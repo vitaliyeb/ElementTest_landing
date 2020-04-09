@@ -1,0 +1,107 @@
+.footer
+  background #316099
+  box-sizing border-box
+  padding 0px 5px
+  border-radius 0px 200px 0px 0px
+  padding-top 1px
+  max-width 1200px
+  width 100%
+  margin 0 auto
+  @media(max-width 420px)
+    border-radius 0px 100px 0px 0px
+  &__top
+    max-width 940px
+    width 100%
+    display flex
+    align-items center
+    margin 91px auto
+    @media(max-width 820px)
+      flex-direction column
+      margin 50px auto
+  &__info
+    display flex
+    flex-direction column
+    max-width 460px
+    width 100%
+  &__heading
+    font-size 36px
+    width 317px
+    margin-bottom 32px
+    line-height 46px
+    color #fff
+    @media(max-width 420px)
+      font-size 30px
+      max-width 300px
+      line-height 40px
+  &__description
+    font-size 16px
+    line-height 26px
+    color #fff
+    opacity 0.5
+    @media(max-width 420px)
+      text-align justify
+  &__button
+    box-sizing border-box
+    padding 15px 75px
+    background-color #5A98D0
+    color #fff
+    font-size 16px
+    line-height 26px
+    border none
+    outline none
+    margin-right 55px
+    margin-left auto
+    cursor pointer
+    border-radius 10px
+    @media(max-width 820px)
+      margin 0 auto
+      margin-top 30px
+  &__line
+    width 85%
+    height 1px
+    opacity 0.5
+    background-color #fff
+    position relative
+    margin-bottom 64px
+    @media(max-width 420px)
+      width 100%
+    &:before
+      position absolute
+      content ''
+      width 100vw
+      height 1px
+      right 0
+      display block
+      background-color #fff
+  &__bottom
+    min-height 478px
+    box-sizing border-box
+    padding-top 96px
+    padding-bottom 64px
+    max-width 940px
+    width 100%
+    display flex
+    flex-wrap wrap
+    margin 0 auto
+    @media(max-width 640px)
+      flex-direction column
+      align-items center
+      padding-bottom 40px
+  &__afrianska
+    color #FFFFFF
+    font-size 16px
+    line-height 26px
+    opacity 0.4
+    width 100%
+    @media(max-width 640px)
+      text-align center
+      order 3
+  &__wrapper
+    &_index
+      background linear-gradient(90deg, rgba(49,96,153,1) 50%, rgba(90,152,208,1) 50%);
+      width 100%
+      overflow-x hidden
+    &_contact
+      background linear-gradient(90deg, rgba(49,96,153,1) 50%, #fff 50%);
+      width 100%
+      overflow-x hidden
